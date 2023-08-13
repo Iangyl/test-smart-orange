@@ -2,10 +2,13 @@
   --primary-col: #FFFFFF;
   --secondary-col: #2C2C2C;
   --grey-background: #AEB4D4;
+  --grey-background2: #FBFBFB;
   --grey-secondary-background: #FAFAFA;
   --grey-heading: #BDBDBD;
   --grey-heading-numbers: #F2F2F2;
   --grey-background-input: #F3F3F3;
+  --grey-pagination-numbers: #E0E0E0;
+  --grey-text: #333333;
 }
 
 body {
