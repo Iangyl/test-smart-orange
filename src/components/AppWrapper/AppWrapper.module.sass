@@ -1,8 +1,9 @@
+@import '../../styles/mixins.sass'
+
 .header
   padding: 29.14px 0
   .container
-    display: flex
-    align-items: center
+    @include disp-align-cent
     justify-content: space-between
     .ulinks
       display: flex
@@ -12,8 +13,7 @@
         border-top: 2px solid transparent
         a
           color: rgb(0,0,0)
-          font-size: 12px
-          letter-spacing: 2px
+          @include label-text
           text-decoration: none
           text-transform: uppercase
 
@@ -34,14 +34,14 @@
     .infoContainer
       flex: 4
       margin-left: 99px
-      display: flex
-      justify-content: space-between
+      @include disp-ju-sp-btw
       h5
         font-weight: 600
       .botlinks
         margin-top: 25px
         li
           a
+            @include common-text
             color: var(--primary-col)
             text-decoration: none
             text-transform: capitalize
@@ -52,8 +52,8 @@
         width: 100%
         margin-top: 25px
         li
-          display: flex
-          align-items: center
+          @include disp-align-cent
+          @include common-text
           gap: 14px
           &:not(:last-of-type)
             margin-bottom: 16px
@@ -62,6 +62,4 @@
         display: flex
         gap: 40px
   .botSection
-    display: flex
-    align-items: center
-    justify-content: center
+    @include disp-align-ju-cent

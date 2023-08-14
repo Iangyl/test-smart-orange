@@ -1,9 +1,10 @@
+@import '../../styles/mixins.sass'
+@import '../../styles/variables.sass'
+  
 .ContactUs
-  margin-bottom: 120px
+  margin-bottom: $margin-bot-blocks
   h2
-    font-size: 64px
-    font-weight: 300
-    color: var(--grey-heading)
+    @include heading2
     margin-bottom: 60px
   .container
     display: flex
@@ -16,6 +17,7 @@
         padding: 15px 20px 15px 20px
         background-color: var(--grey-background-input)
         border: transparent
+        @include common-text
         &:not(:last-child)
           margin-bottom: 10px
       .textArea
@@ -25,18 +27,16 @@
         width: 749px
         height: 369px
   .additional
+    @include common-text
     max-width: 331px
     width: 100%
     padding-left: 32px
-    font-size: 12px
     margin-bottom: 21px
   .buttonContainer
     .button
-      display: flex
-      align-items: center
-      justify-content: center
+      @include disp-align-ju-cent
+      @include dark-btn
       gap: 12px
-      color: var(--primary-col)
-      background: var(--secondary-col)
+      
     
 

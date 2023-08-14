@@ -1,9 +1,10 @@
+@import './../../styles/mixins.sass'
+@import './../../styles/variables.sass'
+
 .OurProjects
-  margin-bottom: 120px
+  margin-bottom: $margin-bot-blocks
   h2
-    font-size: 64px
-    font-weight: 300
-    color: var(--grey-heading)
+    @include heading2
     margin-bottom: 60px
   .flexibleContainer
     display: flex
@@ -15,20 +16,20 @@
       p
         width: 413px
         position: absolute
-        font-size: 64px
+        font-family: $font-family
+        font-size: $headings-font-size
         font-weight: 700
         line-height: 64px
         margin-top: -210px
         margin-left: 79px
         text-transform: uppercase
       .link
+        @include disp-align-ju-cent
         position: absolute
         margin-top: -74px
         margin-left: 79px
-        display: flex
-        align-items: center
-        justify-content: center
         gap: 12px
+        font-family: $font-family
         font-size: 12px
         text-transform: uppercase
         text-align: center
@@ -53,15 +54,9 @@
     .picture5
       width: 370px
   .buttonContainer
-    display: flex
     width: 100%
-    justify-content: flex-end
+    @include disp-ju-end
     .button
-      position: relative
-      right: 0
-      display: flex
-      align-items: center
-      justify-content: center
+      @include disp-align-ju-cent
+      @include dark-btn
       gap: 12px
-      color: var(--primary-col)
-      background: var(--secondary-col)

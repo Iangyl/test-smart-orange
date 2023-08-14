@@ -1,12 +1,15 @@
+@import '../../styles/mixins.sass'
+@import '../../styles/variables.sass'
+
 .MainTasksBlock
   display: flex
   gap: 157px
-  margin-bottom: 120px
+  margin-bottom: $margin-bot-blocks
   .task
-    display: flex
-    align-items: center
+    @include disp-align-cent
     gap: 30px
     p
+      font-family: $font-family
       font-size: 22px
       line-height: 36px
       color: var(--grey-text)

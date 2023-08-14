@@ -1,15 +1,17 @@
+@import '../../../styles/mixins.sass'
+@import '../../../styles/variables.sass'
+
 .Pagination
   .paginationButtons
-    display: flex
-    align-items: center
+    @include disp-align-cent
     gap: 22.94px
   .pages
-    display: flex
+    @include disp-align-cent
     gap: 26px
     margin-top: 94px
+    font-family: $font-family
     color: var(--grey-pagination-numbers)
     font-size: 24px
-    align-items: center
     padding-left: 10px
     .line
       display: inline-block

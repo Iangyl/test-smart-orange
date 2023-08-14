@@ -1,3 +1,6 @@
+@import '../../styles/mixins.sass'
+@import '../../styles/variables.sass'
+
 .AboutCompanyBlock
   display: flex
   gap: 30px
@@ -24,17 +27,14 @@
         height: 345px
   .column3
     h2
-      font-size: 64px
-      font-weight: 300
-      color: var(--grey-heading)
+      @include heading2
       margin-bottom: 20px
     p
+      font-family: $font-family
       font-size: 16px
       line-height: 25px
       margin-bottom: 20px
     .button
-      display: flex
-      align-items: center
-      justify-content: center
-      gap: 12px
+      @include disp-align-ju-cent
+      gap: $gap-in-btn
       

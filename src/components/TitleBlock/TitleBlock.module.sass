@@ -1,16 +1,17 @@
+@import '../../styles/mixins.sass'
+@import '../../styles/variables.sass'
+
 .TitleBlock
   display: flex
-  margin-bottom: 120px
+  margin-bottom: $margin-bot-blocks
   .left
     flex: 1
     padding-top: 336px
     .title
       max-width: 280px
       width: 100%
-      font-size: 64px
       text-transform: uppercase
-      color: var(--grey-heading)
-      font-weight: 300
+      @include heading2
       span
         font-weight: 700
         color: var(--secondary-col)
@@ -25,7 +26,5 @@
     .button
       position: absolute
       margin-top: -71px
-      display: flex
-      align-items: center
-      justify-content: center
+      @include disp-align-ju-cent
       gap: 12px
