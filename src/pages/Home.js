@@ -1,4 +1,5 @@
 import { Fragment } from 'react';
+import ContactUs from '../components/ContactUs/ContactUs';
 import TitleBlock from '../components/TitleBlock/TitleBlock';
 import OurProjects from '../components/OurProjects/OurProjects';
 import MainTasksBlock from '../components/MainTasksBlock/MainTasksBlock';
@@ -10,6 +11,7 @@ const Home = () => (
     <AboutCompanyBlock />
     <MainTasksBlock />
     <OurProjects />
+    <ContactUs />
   </Fragment>
 );
 
